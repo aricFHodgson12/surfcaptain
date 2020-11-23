@@ -1,0 +1,19 @@
+<svg width="30px" height="44px" viewBox="0 0 30 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group Copy</title>
+    <defs>
+        <circle id="path-1" cx="15" cy="15" r="9"></circle>
+    </defs>
+    <g id="Nearby" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Nearby-List-Detail---Mobile" transform="translate(-261.000000, -608.000000)">
+            <g id="Group-Copy" transform="translate(261.000000, 608.000000)">
+                <path d="M14.726034,44 C24.8934626,30.9774013 29.9771769,21.5924915 29.9771769,15.8452706 C29.9771769,7.22443917 22.4453452,0 14.726034,0 C7.0067229,0 -5.32907052e-14,9.83100853 -5.32907052e-14,15.8452706 C-5.32907052e-14,19.8547786 4.90867802,29.2396884 14.726034,44 Z" id="Path-2" fill="#B61D41"></path>
+                <g id="Oval-Copy-10">
+                    <use stroke="#B61D41" stroke-width="8" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#FFFFFF" stroke-width="3" xlink:href="#path-1"></use>
+                    <circle stroke="#FFFFFF" stroke-width="4" cx="15" cy="15" r="11"></circle>
+                    <circle stroke="#B61D41" stroke-width="2" cx="15" cy="15" r="10"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

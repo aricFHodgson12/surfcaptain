@@ -1,0 +1,357 @@
+@import 'settings';
+@import '../../node_modules/foundation-sites/scss/foundation.scss';
+@import 'sc-settings.scss';
+
+#fcst {
+
+}
+
+#fcst-current {
+    width:100%;
+    padding:30px 12px 0 12px;
+    background:#fff;
+    box-shadow: 0 0 12px 0 rgba(49,50,57,0.20);
+
+    @include breakpoint(medium only) {
+        padding:24px 12px 0 12px;
+    }
+    @include breakpoint(smedium down) {
+        padding:12px 12px 0 12px;
+    }
+
+    .fcst-current-header {
+        width:100%;
+        max-width:835px;
+        margin:0 auto;
+
+        @include breakpoint(large only) {
+            max-width:800px;
+        }
+
+        @include breakpoint(medium down) {
+            max-width:700px;
+        }
+
+        .fcst-current-cond {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 10px 8px 0 0;
+            float:left;
+
+            &.clean {
+                background: $clean-cond;
+            }
+            &.fair {
+                background: $fair-cond;
+            }
+            &.choppy {
+                background: $choppy-cond;
+            }
+            &.none {
+                background: $none-cond;
+            }
+        }
+
+        h1 {
+            font-weight: 900;
+            color: #002D45;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom:14px;
+
+            @include breakpoint(medium only) {
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 19px;
+            }
+
+            @include breakpoint(large) {
+                font-size: 34px;
+                line-height: 48px;
+                margin-bottom:28px;
+            }
+
+            @include breakpoint(xlarge only) {
+                font-size: 36px;
+            }
+
+            @include breakpoint(smedium down) {
+                .no-wrap {
+                    white-space: normal !important;
+                }
+            }
+        }
+    }
+
+    ul {
+        margin:0 auto;
+        list-style:none;
+        width:100%;
+        max-width:932px;
+    }
+
+    li {
+
+        @include breakpoint(large) {
+            display:inline-block;
+        }
+
+        @include breakpoint(medium only) {
+            margin-bottom:16px;
+        }
+
+        @include breakpoint(smedium down) {
+            margin-bottom:12px;
+        }
+
+        .current-data-container {
+            @include breakpoint(medium down) {
+                max-width:250px;
+                margin:0 auto;
+            }
+        }
+
+        .current-data-icon {
+            display:inline-block;
+            width:42px;
+            height:42px;
+            border-radius: 50%;
+            background-color: $blue-100;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right:8px;
+
+            @include breakpoint(medium only) {
+                margin-right:12px;
+            }
+
+            @include breakpoint(smedium down) {
+                width:24px;
+                height:24px;
+            }
+
+            &.wx-icon {
+
+                background-size: 30px 30px;
+                @include breakpoint(smedium down) {
+                    background-size: 22px 22px;
+                }
+
+                &.wi-day-sunny {
+                    background-image: url('/images/wx-icons/wi-day-sunny.svg');
+                }
+                &.wi-day-cloudy {
+                    background-image: url('/images/wx-icons/wi-day-cloudy.svg');
+                }
+                &.wi-day-cloudy-windy {
+                    background-image: url('/images/wx-icons/wi-day-cloudy-windy.svg');
+                }
+                &.wi-day-fog {
+                    background-image: url('/images/wx-icons/wi-day-fog.svg');
+                }
+                &.wi-day-rain {
+                    background-image: url('/images/wx-icons/wi-day-rain.svg');
+                }
+                &.wi-day-rain-mix {
+                    background-image: url('/images/wx-icons/wi-day-rain-mix.svg');
+                }
+                &.wi-day-snow {
+                    background-image: url('/images/wx-icons/wi-day-snow.svg');
+                }
+                &.wi-day-sleet {
+                    background-image: url('/images/wx-icons/wi-day-sleet.svg');
+                }
+                &.wi-night-alt-sleet {
+                    background-image: url('/images/wx-icons/wi-night-alt-sleet.svg');
+                }
+                &.wi-day-sunny-overcast {
+                    background-image: url('/images/wx-icons/wi-day-sunny-overcast.svg');
+                }
+                &.wi-day-windy {
+                    background-image: url('/images/wx-icons/wi-day-windy.svg');
+                }
+                &.wi-strong-wind {
+                    background-image: url('/images/wx-icons/wi-strong-wind.svg');
+                }
+                &.wi-night-clear {
+                    background-image: url('/images/wx-icons/wi-night-clear.svg');
+                }
+                &.wi-night-alt-cloudy {
+                    background-image: url('/images/wx-icons/wi-night-alt-cloudy.svg');
+                }
+                &.wi-night-alt-cloudy-windy {
+                    background-image: url('/images/wx-icons/wi-night-alt-cloudy-windy.svg');
+                }
+                &.wi-thunderstorm {
+                    background-image: url('/images/wx-icons/wi-thunderstorm.svg');
+                }
+                &.wi-day-thunderstorm {
+                    background-image: url('/images/wx-icons/wi-day-thunderstorm.svg');
+                }
+                &.wi-night-alt-thunderstorm {
+                    background-image: url('/images/wx-icons/wi-night-alt-thunderstorm.svg');
+                }
+                &.wi-night-alt-rain {
+                    background-image: url('/images/wx-icons/wi-night-alt-rain.svg');
+                }
+                &.wi-night-alt-rain-mix {
+                    background-image: url('/images/wx-icons/wi-night-alt-rain-mix.svg');
+                }
+                &.wi-cloudy {
+                    background-image: url('/images/wx-icons/wi-cloudy.svg');
+                }
+                &.wi-rain {
+                    background-image: url('/images/wx-icons/wi-rain.svg');
+                }
+                &.wi-snow {
+                    background-image: url('/images/wx-icons/wi-snow.svg');
+                }
+                &.wi-windy {
+                    background-image: url('/images/wx-icons/wi-windy.svg');
+                }
+            }
+
+            &.tide-icon {
+                background-size: 24px 24px;
+                @include breakpoint(smedium down) {
+                    background-size: 16px 16px;
+                }
+                background-image: url('/images/icon/tide_icon.svg');
+            }
+
+            &.buoy-icon, &.water-icon {
+                background-size: 26px 26px;
+                @include breakpoint(smedium down) {
+                    background-size: 16px 16px;
+                }
+                background-image: url('/images/icon/buoy.svg');
+            }
+        }
+
+        .current-data-info {
+            display:inline-block;
+            vertical-align: top;
+
+            @include breakpoint(medium only) {
+                display:block;
+            }
+
+            .current-data-label {
+                font-size: 12px;
+                color: #C3C8C8;
+                line-height: 18px;
+
+                @include breakpoint(smedium down) {
+                    line-height: 24px;
+                }
+            }
+
+            .current-data-desc {
+                font-size: 15px;
+                color: #787C7C;
+                line-height: 24px;
+
+                @include breakpoint(large) {
+                    .wetsuit {
+                        font-size:14px;
+                    }
+                }
+
+                @include breakpoint(smedium down) {
+                    font-size:13px;
+                }
+            }
+        }
+    }
+}
+
+#fcst-timeline {
+    background: rgba($blue-00,0.5);
+    padding-bottom:31px;
+
+    @include breakpoint(smedium down) {
+        padding-bottom:28px;
+    }
+
+    .fcst-timeline-header {
+        width:100%;
+        margin:0 auto;
+        padding:15px 0 0;
+        position:relative;
+        left:14px;
+        max-width:954px;
+
+        @include breakpoint(xxlarge only) {
+            max-width:1372px;
+        }
+
+        @include breakpoint(xlarge only) {
+            max-width:1172px;
+        }
+
+        @include breakpoint(medium only) {
+            left:0;
+            padding: 15px 12px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight:bold;
+            color: $blue-700;
+            line-height: 32px;
+            text-align: left;
+
+            @include breakpoint(medium only) {
+                margin:0;
+            }
+
+            @include breakpoint(smedium down) {
+                text-align:center;
+            }
+        }
+
+        .timeline-toggle {
+            padding-top:14px;
+            text-align:right;
+
+            @include breakpoint(medium down) {
+                padding-top:6px;
+            }
+
+            @include breakpoint(smedium down) {
+                padding-top:8px;
+                text-align:center;
+            }
+
+            .fcst-range-8-16 {
+                display:none;
+
+                @include breakpoint(medium down) {
+                    display:inline-block;
+                    color: $blue-500;
+                    font-size: 13px;
+
+                    .arrow-left, .arrow-right {
+                        cursor: pointer;
+                        height: 13px;
+
+                        &.arrow-left {
+                            margin-right: 10px;
+                        }
+
+                        &.arrow-right {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .fcst-legend {
+        text-align:center;
+    }
+
+}
+

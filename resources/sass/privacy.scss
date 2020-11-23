@@ -1,0 +1,24 @@
+@import 'sc-settings';
+
+#privacy {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    @include breakpoint(medium down) {
+        padding:12px;
+    }
+
+    h1 {
+        font-size:30px;
+        font-weight:900;
+    }
+
+    h2 {
+        font-size:22px;
+        font-weight:500;
+    }
+
+
+
+}

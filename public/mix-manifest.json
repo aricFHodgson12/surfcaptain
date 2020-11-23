@@ -1,0 +1,11 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/maps.css": "/css/maps.css",
+    "/css/about.css": "/css/about.css",
+    "/css/faq.css": "/css/faq.css",
+    "/css/privacy.css": "/css/privacy.css",
+    "/css/vue-components.css": "/css/vue-components.css",
+    "/js/manifest.js": "/js/manifest.js",
+    "/js/vendor.js": "/js/vendor.js"
+}

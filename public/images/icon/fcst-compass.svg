@@ -1,0 +1,10 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Roboto', sans-serif;font-size:6px">
+    <circle cx="50%" cy="50%" r="49" stroke="#494E4E" stroke-width="1" fill="transparent" />
+    <line x1="21" y1="50%" x2="79" y2="50%" stroke="#494E4E" stroke-width="1" />
+    <line x1="50%" y1="21" x2="50%" y2="79" stroke="#494E4E" stroke-width="1" />
+    <circle cx="50%" cy="50%" r="2.5" fill="#494E4E"></circle>
+    <text x="48" y="8" fill="#494E4E">0</text>
+    <text x="45" y="96" fill="#494E4E">180</text>
+    <text x="4" y="52" fill="#494E4E">270</text>
+    <text x="90" y="52" fill="#494E4E">90</text>
+</svg>

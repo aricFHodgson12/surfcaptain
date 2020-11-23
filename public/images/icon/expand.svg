@@ -1,0 +1,15 @@
+<svg width="12px" height="8px" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="10.59 0.295 6 4.875 1.41 0.295 0 1.705 6 7.705 12 1.705"></polygon>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-256.000000, -1219.000000)" id="icon/navigation/chevron_right_24px-copy-11">
+            <g transform="translate(256.000000, 1219.000000)">
+                <mask fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icon/navigation/expand_more_24px" fill="#787C7C" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

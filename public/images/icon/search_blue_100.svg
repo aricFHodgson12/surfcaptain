@@ -1,0 +1,15 @@
+<svg viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="8 0 6.59 1.41 12.17 7 0 7 0 9 12.17 9 6.59 14.59 8 16 16 8"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav/desktop/logged-in" transform="translate(-648.000000, -21.000000)">
+            <g id="icon/action/search_24px" transform="translate(648.000000, 21.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="icon/navigation/arrow_forward_24px" fill="#A1C6D7" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="9.705 6 8.295 7.41 12.875 12 8.295 16.59 9.705 18 15.705 12"></polygon>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-280.000000, -20.000000)">
+            <g transform="translate(272.000000, 14.000000)">
+                <mask fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use fill="#8F9595" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

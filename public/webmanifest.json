@@ -1,0 +1,29 @@
+{
+  "short_name": "Surf Captain",
+  "name": "Surf Captain",
+  "description": "Surf Forecasts",
+  "icons": [
+    {
+      "src": "/images/manifest/icon-192-blue.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/manifest/icon-512-blue.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/images/manifest/icon-1024-blue.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#005384",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#fff",
+  "shortcuts": [
+  ]
+}

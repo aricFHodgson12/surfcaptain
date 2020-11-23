@@ -1,0 +1,35 @@
+<svg width="36px" height="48px" viewBox="0 0 36 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group Copy 9</title>
+    <defs>
+        <path d="M11.7808272,35.2 C19.9025978,25.6137686 23.9696159,18.1058407 23.9818817,12.6762165 C24,4.53178006 18.6913824,0 11.7808272,0 C4.87027205,0 0,4.53178006 0,12.6762165 C0,18.1058407 3.92694241,25.6137686 11.7808272,35.2 Z" id="path-1"></path>
+        <filter x="-37.5%" y="-25.6%" width="175.1%" height="151.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.192156863   0 0 0 0 0.196078431   0 0 0 0 0.223529412  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-3" cx="12" cy="12.2" r="5"></circle>
+    </defs>
+    <g id="Nearby" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Nearby-List-Open---Mobile" transform="translate(-149.000000, -355.000000)">
+            <g id="Group-Copy-9" transform="translate(155.000000, 361.000000)">
+                <g id="Path-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Oval-Copy-10">
+                    <use stroke="#FFFFFF" stroke-width="8" fill="#0978A1" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use stroke="#007AA5" stroke-width="3" xlink:href="#path-3"></use>
+                    <circle stroke="#0978A1" stroke-width="4" cx="12" cy="12.2" r="7"></circle>
+                    <circle stroke="#FFFFFF" stroke-width="2" cx="12" cy="12.2" r="6"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

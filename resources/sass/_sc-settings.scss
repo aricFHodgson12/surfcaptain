@@ -1,0 +1,223 @@
+@import 'settings';
+
+$max-width: 1024px;
+$max-width-xlarge: 1240px;
+$max-width-xxlarge: 1440px;
+
+$max-width-content-large: 982px;
+$max-width-content-xlarge: 1200px;
+$max-width-content-xxlarge: 1400px;
+
+$light-gray: #80828D;
+$dark-letter: #2E3336;
+$gray-border: #D7D9E0;
+
+$gray-100: #F4F5F5;
+$gray-200: #E4E6E6;
+$gray-300: #C3C8C8;
+$gray-350: #adb2b2;
+$gray-400: #8F9595;
+$gray-500: #787C7C;
+$gray-600: #494E4E;
+$gray-700: #303434;
+$gray-800: #121414;
+$gray-900: #010101;
+
+$blue-0: #e5edf1;
+$blue-00: #DCE9F0;
+$blue-100: #A1C6D7;
+$blue-200: #4B94B4;
+$blue-300: #0978A1;
+$blue-400: #005A8B;
+$blue-500: #005384;
+$blue-600: #004065;
+$blue-700: #00304C;
+$blue-800: #002033;
+$blue-900: #00111C;
+$dark-blue-heading: #002D45;
+
+$yellow-00: #FFF5DF;
+$yellow-50: #FFF5DF;
+$yellow-100: #FFDF99;
+$yellow-200: #FFC743;
+$yellow-300: #FFC63D;
+$yellow-400: #FFC32B;
+$yellow-500: #FFAB00;
+$yellow-600: #EA9100;
+$yellow-700: #A56600;
+$yellow-800: #643E00;
+$yellow-900: #462B00;
+
+$teal-700: #0978A1;
+$teal-500: #0978A1;
+$teal-00: #DCE9F0;
+
+$green-text: #12524E;
+
+$warning-500: #cc3256;
+$warning-300: #EE7893;
+
+$success-700: #2D632B;
+$success-600: #3C8647;
+$success-500: #55B272;
+$success-300: #9DEEAA;
+
+$roboto-font: 'Roboto', sans-serif;
+$roboto-condensed-font: 'Roboto Condensed', sans-serif;
+$helvetica-font: 'Helvetica';
+
+$good-cond: #6FC59A;
+$clean-cond: #6FC59A;
+$fair-cond: #4A90E2;
+$poor-cond: #D74244;
+$choppy-cond: #D74244;
+$none-cond: $gray-300;
+
+$blog-text-secondary: #718096!important;
+$blog-text-muted: #a0aec0!important;
+$blog-border-radius: .5rem;
+
+@mixin maxWidth() {
+    margin:0 auto;
+    @include breakpoint(medium down) {
+        width:100%;
+    }
+    @include breakpoint(large only) {
+        width:$max-width;
+    }
+    @include breakpoint(xlarge only) {
+        width:$max-width-xlarge;
+
+        &.max-width-lg {
+            width: $max-width;
+        }
+    }
+    @include breakpoint(xxlarge) {
+        width:$max-width-xxlarge;
+
+        &.max-width-xl {
+            width: $max-width-xlarge;
+        }
+
+        &.max-width-lg {
+            width: $max-width;
+        }
+    }
+}
+
+@mixin maxContentWidth() {
+    margin:0 auto;
+    @include breakpoint(xxlarge) {
+        width:$max-width-content-xxlarge;
+
+        &.max-width-xl {
+            width: $max-width-content-xlarge;
+        }
+
+        &.max-width-lg {
+            width: $max-width-content-large;
+        }
+    }
+    @include breakpoint(xlarge only) {
+        width:$max-width-content-xlarge;
+
+        &.max-width-lg {
+            width: $max-width-content-large;
+        }
+    }
+    @include breakpoint(large only) {
+        width:$max-width-content-large;
+    }
+    @include breakpoint(medium down) {
+        width:100%;
+    }
+}
+
+@mixin blogContentWidth() {
+    width:100%;
+    margin:0 auto;
+    @include breakpoint(xlarge) {
+        max-width:$max-width-content-xlarge;
+    }
+    @include breakpoint(large only) {
+        max-width:$max-width-content-large;
+    }
+}
+
+@mixin mainBlogHeading() {
+    color: $dark-blue-heading;
+    font-weight:900;
+}
+
+@mixin transform($transform) {
+    transform: $transform;
+    -ms-transform: $transform;
+    -webkit-transform: $transform;
+}
+
+@mixin transition($transition) {
+    transition: $transition;
+    -webkit-transition: $transition;
+}
+
+@mixin loader($small-color, $large-color, $border: 5px, $width: 25px, $height: 25px) {
+    display:inline-block;
+    border: $border solid $small-color;
+    border-radius: 50%;
+    border-top: $border solid $large-color;
+    width: $width;
+    height: $height;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@mixin actionButton() {
+    background:$blue-00;
+    border-radius: 19px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $blue-500;
+    line-height: 38px;
+    display: inline-block;
+    padding: 0 18px;
+    cursor:pointer;
+    outline:0;
+}
+
+@mixin borderBtn($color: $blue-300) {
+    border: 2px solid $color;
+    border-radius: 19px;
+    font-weight: 700;
+    font-size: 14px;
+    color: $color;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 34px;
+    display:block;
+    width:100%;
+    outline:0;
+}
+
+@mixin userSelectNone() {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin slideUpDownTransition() {
+    @include transition(all 0.5s ease-in-out);
+}
+@mixin slideUpDownEnterTo() {
+    transform: translateY(0vh);
+}
+@mixin slideUpDownEnter() {
+    transform: translateY(100vh);
+}
+
+@mixin fadeTransition() {
+    @include transition(opacity .5s);
+}
+@mixin fadeEnter() {
+    opacity: 0;
+}

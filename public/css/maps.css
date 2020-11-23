@@ -1,0 +1,46 @@
+#maps #maps-coming-soon {
+  position: relative;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+#maps #maps-coming-soon img {
+  width: 100%;
+  min-width: 700px;
+}
+
+#maps #maps-coming-soon #coming-soon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 45, 69, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+#maps #maps-coming-soon h1 {
+  width: 100%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  font-size: 48px;
+}
+
+@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+  #maps #maps-coming-soon h1 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 39.99875em) {
+  #maps #maps-coming-soon h1 {
+    font-size: 32px;
+  }
+}
+

@@ -1,0 +1,22 @@
+#privacy {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media print, screen and (max-width: 63.99875em) {
+  #privacy {
+    padding: 12px;
+  }
+}
+
+#privacy h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+#privacy h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
